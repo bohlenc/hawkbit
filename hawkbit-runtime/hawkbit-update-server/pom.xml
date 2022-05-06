@@ -24,6 +24,14 @@
          <plugin>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-maven-plugin</artifactId>
+            <configuration>
+            <excludes>
+               <exclude> 
+                  <groupId>org.springframework.cloud</groupId>
+                  <artifactId>spring-cloud-function-context</artifactId>
+               </exclude>
+            </excludes> 
+            </configuration>
             <executions>
                <execution>
                   <goals>
